@@ -1,1 +1,1 @@
-practicing GSAP for DigitalCity
+README.md
