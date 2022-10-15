@@ -272,3 +272,22 @@ section.prj {
 section.news {
   background-color: lightcoral;
 }
+
+.pagetop{
+  position:fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+.pagetop a{
+  display: block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.pagetop:hover{
+  opacity: 0.85;
+}
