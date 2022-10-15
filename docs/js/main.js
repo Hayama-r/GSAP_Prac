@@ -82,7 +82,7 @@ jsFadeUpTitles.forEach((jsFadeUpTitle, index) => {
                 start: 'top-=100 bottom',
                 end: 'top top',
                 once: true,
-                markers: true,
+                /* markers: true, */
                 onEnter: () => jsFadeUpTitle.classList.add("js-fadeUp-ttl"),
             }
         });
