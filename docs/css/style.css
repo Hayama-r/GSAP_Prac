@@ -8,7 +8,7 @@ html,body {
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Noto Sans JP", sans-serif;
-  background-color: #b0c2dd;
+  background-color: rgb(45, 65, 80);
   color: #fff;
   word-break: break-all;
 }
@@ -101,13 +101,44 @@ li {
   font-family: "Roboto", sans-serif;
 }
 
+
+
+.video__wrap{
+  position: relative;
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.video-wrap h1{
+  position: absolute;
+  z-index: 3;
+}
+
+.fv__vid{
+  width: 100%;
+  
+}
+
+.fv__vid video{
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: auto;
+z-index: 1;
+}
+
+
+
 .fv__inner {
   width: 90%;
   height: 100%;
   max-width: 1380px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 25%;
 }
 
 .fv__ttl {
@@ -117,9 +148,9 @@ li {
 }
 
 .fv__ttl h1 {
-  font-size: clamp(5rem, 3vw, 17rem);
+  font-size: clamp(5rem, 4vw, 17rem);
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .fv__ttl h1 .fv-span {
@@ -150,7 +181,9 @@ li {
 }
 
 .prj {
-  margin-top: 10%;
+  margin-top: 20%;
+  height: 7000px;
+
 }
 
 .prj__inner {
@@ -192,6 +225,10 @@ li {
 .prj__txt h4 span {
   display: block;
   margin: -5px 0;
+}
+
+.cv0,.cv1,.cv2{
+  background: rgba(0,0,0,0.5);
 }
 
 .fade-up-ttl {
@@ -262,11 +299,11 @@ section{
 }
 
 section.fv {
-  background-color:#b0c2dd;
+  background-color:rgb(45, 65, 80);
 }
 
 section.prj {
-  background-color:darkcyan;
+  background-color:rgb(45, 65, 80);
 }
 
 section.news {

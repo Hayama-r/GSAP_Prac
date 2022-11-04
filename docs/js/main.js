@@ -105,6 +105,69 @@ jsBorders.forEach((jsBorder, index) => {
         });
 });
 
+const jsPinning = document.querySelectorAll('.pin')
+
+jsPinning.forEach((jsPinning, index) => {
+    gsap.to(
+        jsPinning,
+        {
+            scrollTrigger: {
+                trigger: ".prj__inner",
+                start: "top top",
+                end: "bottom bottom",
+                pin: ".pin",
+                /* markers: true */
+            }
+        }
+
+    )
+});
 
 
+const jsCv1 = document.querySelectorAll('.cv1');
 
+jsCv1.forEach((jsCv, index) => {
+    gsap.to(
+        jsCv1,
+        {
+            scrollTrigger: {
+                trigger: jsCv1,
+                start: 'top top',
+                end: 'bottom bottom',
+                onEnter:changeVid1,
+                onLeaveBack:changeVid0,
+                markers: true
+            }
+        });
+});
+
+const jsCv2 = document.querySelectorAll('.cv2');
+
+jsCv2.forEach((jsCv, index) => {
+    gsap.to(
+        jsCv2,
+        {
+            scrollTrigger: {
+                trigger: jsCv2,
+                start: 'top',
+                onEnter:changeVid2,
+                onLeaveBack:changeVid1,
+                markers: true
+            }
+        });
+});
+
+
+const myV = document.getElementById("mv");
+
+function changeVid0(){
+    myV.src = "video/control4_x4.mp4" 
+}
+
+function changeVid1(){
+    myV.src = "video/snag-0005nijo_almost_x4.mp4"
+}
+
+function changeVid2(){
+    myV.src = "video/20030913DV-touch2_x4.mp4"
+}
