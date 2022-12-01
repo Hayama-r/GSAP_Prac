@@ -37,7 +37,6 @@
 
         <section class="fv" id="section0">
             <div class="video__wrap">
-
                 <div class="fv__vid"><video src="video/V4ShijoMeet_x4.mp4" muted autoplay playsinline
                         loop></video></div>
                 <div class="fv__inner">
@@ -105,40 +104,25 @@
             </div>
         </section>
 
-        <section class="news" id="section2">
-            <div class="news__inner">
-                <ul class="news__ul">
-                    <li class="fade-up-ttl"><a href="">成果展開に稲荷小学校における実践研究を追加しました</a>
-                        <p>HP更新</p>
-                        <span>2004.01.28</span>
-                    </li>
-                    <li class="fade-up-ttl"><a href="">公開ソフトウェアにFreeWalkを追加しました</a>
-                        <p>HP更新</p>
-                        <span>2003.12.09</span>
-                    </li>
-                    <li class="fade-up-ttl"><a href="">WEB公開実験「ユニバーサルキャラクタ実験」を開始しました。ご参加ください。</a>
-                        <p>イベント</p>
-                        <span>2004.10.01~</span>
-                    </li>
-                    <li class="fade-up-ttl"><a href="">International Workshop on Massively Multi-Agent Systems
-                            を開催しました</a>
-                        <p>イベント</p>
-                        <span>2004.12.10</span>
-                    </li>
-                    <li class="fade-up-ttl"><a href="">国際シンポジウム「生活世界のセマンティクス」「デジタルシティのデザイン」を開催しました</a>
-                        <p>イベント</p>
-                        <span>2004.12.09</span>
-                    </li>
-                    <li class="fade-up-ttl"><a href="">第3回デジタルシティワークショップを開催しました</a>
-                        <p>イベント</p>
-                        <span>2004.06.04</span>
-                    </li>
-                    <li class="fade-up-ttl"><a href="">アジアブロードバンドシンポジウムを北京にて開催しました</a>
-                        <p>イベント</p>
-                        <span>2004.03.19</span>
-                    </li>
-                </ul>
-                <p class="news__logo">新着情報</p>
+        <section class="content1" id="section2">
+            <div class="content1__inner">
+                <h1>仮想都市空間システム</h1>
+                <span>普段行われる避難訓練には，１）多勢が集まる必要がある，２）公共空間など実施が困難な場所がある，３）実際の避難現場は危険だが避難訓練は安全でなければならない，４）事前に定められた手順を追うだけで意志決定の訓練にはならない，などの問題がある．仮想空間はこれらの解決に有効な，１）自宅から参加可能，２）環境を低コストで準備可能，３）危険な状況を安全に体験可能，４）ゲーミング手法を適用可能，などの利点を持つ．</span><br>
+                <span>仮想空間における訓練は，乗り物の運転など個人タスクにおいては実用化されているが，避難訓練のような集団タスクにはあまり適用されていない．個人タスクの場合は物理シミュレーションにユーザの入力を反映させる仕組みがあれば良いが，集団タスクの場合はこれに加えて集団行動シミュレーションにユーザが参加する仕組みが必要となる．既存の群集シミュレーションは分析を目的としているため社会的インタラクションを物理法則で近似することが多く，ユーザ参加は考慮されていない．ユーザ参加を可能にするには，アバターと同じように反応し意思決定を行う社会的なエージェントが必要となる．そこで，社会的エージェントとユーザの間のインタラクションプロトコルをシナリオとして記述する言語Qと，記述されたインタラクションシナリオを実行するプラットフォームFreeWalkからなる仮想都市空間システムFreeWalk/Qを開発した．</span><br>
+                <span>仮想訓練に社会的エージェントを用いる既存システムではユーザとエージェントの能力に差があるためユーザ・エージェント各々の役割を相互に交換できない．そのようなアーキテクチャを大規模群集に適用すると，システムが複雑化する，参加人数の変動に対応できない，シミュレーションのテストにユーザが必要となる，などの問題が生じる．</span><br>
+                <span>FreeWalkではユーザとエージェントの区別を無くすために，歩く・話すといった外界への作用や，見る・聞くといった外界の知覚を仮想空間内で実行するモジュールを，APIおよびUIから同様に呼び出し可能にした．ユーザはUIを操作して，エージェントはAPIから制御されて，仮想空間の中で群集シミュレーションを共有する（図１）．この共有は，以下のようにAPI とUI の連結方法を工夫して実現した．</span><br>
+            </div>
+        </section>
+
+        <section class="content2" id="section3">
+            <div class="content2__inner">
+                
+            </div>
+        </section>
+
+        <section class="content3" id="section4">
+            <div class="content3__inner">
+                
             </div>
         </section>
 
@@ -149,7 +133,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <!-- <script src="locomotive-scroll-master/dist/locomotive-scroll.min.js"></script> -->
     <script src="js/main.js"></script>
 
 </body>

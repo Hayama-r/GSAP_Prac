@@ -11,6 +11,8 @@ body {
   background-color: rgb(45, 65, 80);
   color: #fff;
   word-break: break-all;
+  font-size: 2.25em;
+  letter-spacing: .1em;
 }
 
 .over-hidden {
@@ -43,7 +45,7 @@ li {
   transform: scaleY(1) translateZ(10px);
   transform-origin: center top;
   width: 100%;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 #load__mask.reveal {
@@ -106,7 +108,6 @@ li {
 .video__wrap{
   position: relative;
   height: 100%;
-  height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -182,7 +183,6 @@ z-index: 1;
 
 .prj {
   margin-top: 20%;
-  height: 7000px;
 
 }
 
@@ -203,7 +203,7 @@ z-index: 1;
 }
 
 .prj__txt p {
-  font-size: clamp(3.5rem, 9vw, 11rem);
+  font-size: clamp(2.5rem, 7vw, 8rem);
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -211,14 +211,14 @@ z-index: 1;
 }
 
 .prj__txt h3 {
-  font-size: clamp(2.6rem, 3.5vw, 5.5rem);
+  font-size: clamp(2.6rem, 2.5vw, 5.5rem);
   font-weight: 700;
   margin-top: 9%;
   margin-bottom: 6%;
 }
 
 .prj__txt h4 {
-  font-size: clamp(2.6rem, 2vw, 5.5rem);
+  font-size: clamp(2.6rem, 1vw, 5.5rem);
   font-weight: 500;
 }
 
@@ -242,60 +242,21 @@ z-index: 1;
   opacity: 1;
 }
 
-.news {
-  padding: 10% 0;
+.content1 {
+  padding: 5% 0;
   word-break: normal;
 }
 
-.news__inner {
+.content1__inner {
   width: 96%;
   max-width: 1380px;
-  margin: 0 auto;
+  margin: 0;
   position: relative;
-}
-
-.news__ul {
-  width: 50%;
-  min-width: 570px;
-  margin: 0 auto;
-}
-
-.news__ul li:nth-child(even) {
-  margin: 40px 0;
-}
-
-.news__ul li a {
-  font-size: clamp(2.6rem, 3.5vw, 5.5rem);
-  letter-spacing: 0.02em;
-  font-weight: 900;
-}
-
-.news__ul li p {
-  font-size: 1.8rem;
-  font-weight: 500;
-  font-family: "Noto Sans JP", sans-serif;
-  margin-bottom: 16px;
-}
-
-.news__ul li span {
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-}
-
-.news__logo {
-  font-size: clamp(4rem, 6vw, 7rem);
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.1em;
-  position:absolute;
-  right: 1%;
-  top: 43%;
 }
 
 section{
   scroll-margin: 0px;
-
+  position: relative;
 }
 
 section.fv {
@@ -306,8 +267,8 @@ section.prj {
   background-color:rgb(45, 65, 80);
 }
 
-section.news {
-  background-color: lightcoral;
+section.content1 {
+  background-color: rgb(40, 45, 70);
 }
 
 .pagetop{
